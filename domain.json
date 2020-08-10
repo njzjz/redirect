@@ -13,5 +13,6 @@
     "img.njzjz.win":"https://images.weserv.nl/",
     "js.njzjz.win":"https://cdn.jsdelivr.net",
     "bf.njzjz.win":"https://bb.njzjz.win/file/jinzhe",
+    "colab.njzjz.win": "https://nbviewer.jupyter.org/urls/drive.google.com/uc/%3Fexport%3Ddownload%26id%3D",
     "*":"https://njzjz.win/"
 }
