@@ -6,6 +6,6 @@ app.use('/', function (req, res) {
 	var url = req.originalUrl;
 	var redirect = domain[host];
 	if (!redirect || url=="/robots.txt") redirect = domain['*'];
-	res.redirect(301, redirect+url);
+	res.redirect(301, redirect+url.substring(1));
 })
 module.exports = app;
