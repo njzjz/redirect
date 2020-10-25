@@ -17,5 +17,8 @@
     "d.njzjz.win": "https://app.njzjz.win/download",
     "app.njzjz.win": "https://login.njzjz.win/app.php?app=",
     "u.njzjz.win": "https://i.njzjz.win/",
+    "my.njzjz.win": "https://njzjz.cloudflareaccess.com",
+    "signin.njzjz.win": "https://njzjz.cloudflareaccess.com",
+    "login.njzjz.win": "https://njzjz.cloudflareaccess.com",
     "*":"https://njzjz.win/"
 }
