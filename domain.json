@@ -20,5 +20,6 @@
     "my.njzjz.win": "https://njzjz.cloudflareaccess.com",
     "signin.njzjz.win": "https://njzjz.cloudflareaccess.com",
     "login.njzjz.win": "https://njzjz.cloudflareaccess.com",
+    "conda.deepmodeling.org": "https://bb.njzjz.win/file/deepmodeling/",
     "*":"https://njzjz.win/"
 }
