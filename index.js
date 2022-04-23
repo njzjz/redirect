@@ -7,7 +7,7 @@ app.use('/', function (req, res) {
 	const url = req.originalUrl;
 	var redirect = domain[host];
 	if (!redirect || url=="/robots.txt") redirect = domain['*'];
-	if (host == 'conda.deepmodeling.org') {
+	if (host == 'conda.deepmodeling.org' || host == 'conda.deepmodeling.com') {
 		// redirect to doc if not conda or mamba
 		const agent = req.get('User-Agent');
 		if (!(agent.includes('conda')) && !(agent.includes('mamba')))
