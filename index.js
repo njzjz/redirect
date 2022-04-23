@@ -10,7 +10,8 @@ app.use('/', function (req, res) {
 	if (host == 'conda.deepmodeling.org') {
 		// redirect to doc if not conda or mamba
 		const agent = req.get('User-Agent');
-		if (!(agent.includes('conda')) && !(agent.includes('mamba'))) redirect = "https://docs.deepmodeling.com/projects/deepmd/en/latest/install/easy-install.html#install-with-conda";
+		if (!(agent.includes('conda')) && !(agent.includes('mamba')))
+			res.redirect(302, "https://docs.deepmodeling.com/projects/deepmd/en/latest/install/easy-install.html#install-with-conda");
 	}
 	res.redirect(301, redirect+url.substring(1));
 })
