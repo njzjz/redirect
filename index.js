@@ -2,7 +2,7 @@ const express = require('express');
 const domain = require('./domain');
 const app = express();
 app.use('/', function (req, res) {
-	res.setHeader('Cache-Control', 's-max-age=3600000, stale-while-revalidate');
+	res.setHeader('Cache-Control', 's-maxage=3600000, stale-while-revalidate');
 	const host = req.get('host');
 	const url = req.originalUrl;
 	var redirect = domain[host];
