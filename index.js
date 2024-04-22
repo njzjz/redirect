@@ -11,6 +11,7 @@ app.use('/', function (req, res) {
 		// redirect to doc if not conda or mamba
 		const agent = req.get('User-Agent');
 		if (!(agent.includes('conda')) && !(agent.includes('mamba')))
+			res.setHeader('Cache-Control', 'no-cache');
 			res.redirect(302, "https://docs.deepmodeling.com/projects/deepmd/en/latest/install/easy-install.html#install-with-conda");
 	}
 	res.redirect(301, redirect+url.substring(1));
